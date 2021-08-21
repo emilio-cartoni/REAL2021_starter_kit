@@ -1,0 +1,23 @@
+abstraction:
+  precision: 8
+  type: image
+  n_obj: 1
+  total_abstraction: 200
+  percentage_of_actions_ignored_at_the_extremes: 0.0
+  pre_trained_vae: false
+planner:
+  replan: true
+  try_random: false
+  type: mega
+exploration:
+  action_size: 1000
+  action_parts_max: 10
+  home_duration: 150
+simulation:
+  experience_data: data/transitions_file.npy
+  compressed_data: true
+  extrinsic_steps: 10000
+  save_images: true
+  save_masks: false
+  save_positions: false
+  use_experience_data: false
