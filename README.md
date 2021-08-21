@@ -9,7 +9,7 @@ Competition will start on August 23rd.  **Starting kit will be populated shortly
 * [Make your own submission](#make-your-own-submission)
 
 ## Install the software
-Pre-requisites: [Python](https://www.python.org/), [Git](https://git-scm.com/), [Conda (Anaconda or Miniconda)](https://www.anaconda.com/products/individual) 
+Pre-requisites: [Python](https://www.python.org/), [Git](https://git-scm.com/), [Conda (Anaconda or Miniconda)](https://www.anaconda.com/products/individual) and [Docker](https://www.docker.com/)   
 
 1. Clone this repository:  
 ```bash
