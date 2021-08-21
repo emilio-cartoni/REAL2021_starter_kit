@@ -1,5 +1,5 @@
-# REAL2021_starter_kit
-Starting kit for the REAL2021 competition on Robot open-Ended Autonomous Learning.
+![REAL2021 banner](https://raw.githubusercontent.com/wiki/emilio-cartoni/REAL2021_starter_kit/images/banner2021.gif)
+Starting kit for the [REAL2021 competition on Robot open-Ended Autonomous Learning](https://eval.ai/web/challenges/challenge-page/1134/overview).
 
 Competition will start on August 23rd.  **Starting kit will be populated shortly before.**
 
