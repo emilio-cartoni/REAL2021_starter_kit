@@ -1,0 +1,14 @@
+FROM ubuntu:20.04
+RUN mkdir /workspace
+WORKDIR /workspace/
+RUN apt-get update && apt-get install -y git nano libgl1-mesa-glx build-essential libglib2.0-0
+RUN touch /root/.nanorc
+RUN echo "set tabsize 4" >> ~/.nanorc
+RUN echo "set tabstospaces" >> ~/.nanorc
+COPY ./docker/environment.yml /root/environment.yml
+COPY ./docker/Miniconda3-py38_4.10.3-Linux-x86_64.sh /root/Miniconda3-py38_4.10.3-Linux-x86_64.sh
+RUN /root/Miniconda3-py38_4.10.3-Linux-x86_64.sh -b && eval "$(/root/miniconda3/bin/conda shell.bash hook)" && /root/miniconda3/bin/conda clean -afy 
+RUN /root/miniconda3/bin/conda init
+RUN /root/miniconda3/bin/conda env create -f /root/environment.yml && /root/miniconda3/bin/conda clean -afy 
+RUN echo 'conda activate real_robots' >> ~/.bashrc 
+ADD . /workspace/
