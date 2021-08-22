@@ -7,6 +7,8 @@ Competition will start on August 23rd and will last up to mid December 2021.
 * [Install the software](#install-the-software)
 * [How to launch the agent](#how-to-launch-the-baseline-agent)
 * [Make your own submission](#make-your-own-submission)
+* [How do I...?](#how-do-i)
+* [Support](#support)
 
 ## Install the software
 Pre-requisites: [Python](https://www.python.org/), [Git](https://git-scm.com/), [Conda (Anaconda or Miniconda)](https://www.anaconda.com/products/individual) and [Docker](https://www.docker.com/)   
@@ -43,7 +45,7 @@ docker run -it real2021submission:latest /root/miniconda3/bin/conda run -n real_
 3. Go to [EvalAI Submit page](https://eval.ai/web/challenges/challenge-page/1134/submission) and follow the instructions there to submit the image as a submission for the REAL2021 competition.  
 
 
-## How do I...? 
+## How do I...?
 For further informations, check our [Wiki](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki).  
 In particular, if you want to know more about:
 - the environment, see ...
