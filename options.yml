@@ -1,3 +1,3 @@
 ENVIRONMENT_TYPE: easy # easy or hard
 EVALUATION_ACTION_TYPE: macro_action # macro_action, joints or cartesian
-EVALUATION_N_OBJECTS: 2 # 1, 2 or 3
+EVALUATION_N_OBJECTS: 1 # 1, 2 or 3
