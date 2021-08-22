@@ -42,10 +42,12 @@ docker run -it real2021submission:latest /root/miniconda3/bin/conda run -n real_
 ```
 3. Go to [EvalAI Submit page](https://eval.ai/web/challenges/challenge-page/1134/submission) and follow the instructions there to submit the image as a submission for the REAL2021 competition.  
 
+
 ## How do I...?
 To know more, see... (TBD)
 
 ## Support
-For any problems or additional questions, you can post on [EvalAI forum](https://evalai-forum.cloudcv.org/) or [contact the organizers](mailto:emilio.cartoni@yahoo.it?subject=[REAL2021]%20Question).
+For any problems or additional questions on the competition, you can post on [EvalAI forum](https://evalai-forum.cloudcv.org/) or [contact the organizers](mailto:emilio.cartoni@yahoo.it?subject=[REAL2021]%20Question).
+
 
 **Best of Luck** :tada: :tada:
