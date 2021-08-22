@@ -36,7 +36,7 @@ The default values will only launch a short evaluation, edit `local_evaluation.p
 
 ## Make your own submission
 1. Launch `build.sh` to create a docker image for your submission.  
-2. You can launch your docker image locally by doing:
+2. (Optional) You can launch your docker image locally, to check it is working:
 ```
 docker run -it real2021submission:latest /root/miniconda3/bin/conda run -n real_robots python local_evaluation.py
 ```
