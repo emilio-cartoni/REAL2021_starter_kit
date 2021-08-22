@@ -44,8 +44,8 @@ docker run -it real2021submission:latest /root/miniconda3/bin/conda run -n real_
 
 
 ## How do I...? 
-For further informations, check our Wiki.
-In particular, if you want to know more about:
+For further informations, check our [Wiki](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki).  
+In particular, if you want to know more about:  
 - the environment, see ...
 - the options available for the environment and the simulation, see ...
 - the docker image build, see ...
