@@ -12,4 +12,5 @@ RUN /root/miniconda3/bin/conda init
 RUN echo 'conda activate real_robots' >> ~/.bashrc
 COPY ./docker/environment.yml /root/environment.yml
 RUN /root/miniconda3/bin/conda env create -f /root/environment.yml && /root/miniconda3/bin/conda clean -afy 
+COPY ./docker/docker_evaluation.py /workspace/docker_evaluation.py
 ADD . /workspace/
