@@ -25,9 +25,12 @@ else
     fi    
 fi
 
-# Copy environment.yml inside ./docker (to keep track of the file used in build)
-cp ../environment.yml .
-echo "Environment.yml copied."
+# Copy yml files inside ./docker (to keep track of the file used in build)
+cp ../environment.yml environment_build.yml
+echo "environment.yml copied."
+
+cp ../options.yml options_build.yml
+echo "options.yml copied."
 
 cd ..
 

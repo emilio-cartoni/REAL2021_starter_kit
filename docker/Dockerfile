@@ -10,7 +10,7 @@ COPY ./docker/Miniconda3-py38_4.10.3-Linux-x86_64.sh /root/Miniconda3-py38_4.10.
 RUN /root/Miniconda3-py38_4.10.3-Linux-x86_64.sh -b && eval "$(/root/miniconda3/bin/conda shell.bash hook)" && /root/miniconda3/bin/conda clean -afy 
 RUN /root/miniconda3/bin/conda init
 RUN echo 'conda activate real_robots' >> ~/.bashrc
-COPY ./docker/environment.yml /root/environment.yml
+COPY ./docker/environment_build.yml /root/environment.yml
 RUN /root/miniconda3/bin/conda env create -f /root/environment.yml && /root/miniconda3/bin/conda clean -afy 
 COPY ./docker/docker_evaluation.py /workspace/docker_evaluation.py
 ADD . /workspace/
