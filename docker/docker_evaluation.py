@@ -8,7 +8,7 @@ with open('options.yml', 'r') as ymlfile:
     cfg = yaml.load(ymlfile, Loader=yaml.FullLoader)
     EVALUATION_ACTION_TYPE = cfg['EVALUATION_ACTION_TYPE']
     EVALUATION_N_OBJECTS = cfg['EVALUATION_N_OBJECTS']
-    envs = {'easy': 'R1', 'hard' : 'R2'}
+    envs = {'easy': 'R1', 'hard': 'R2'}
     ENVIRONMENT = envs[cfg['ENVIRONMENT_TYPE']]
 
 DATASET_PATH = "./data/goals-REAL2020-s2021-25-15-10-%s.npy.npz" % EVALUATION_N_OBJECTS

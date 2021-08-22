@@ -13,5 +13,6 @@ class RandomPolicy(BasePolicy):
         action['render'] = self.render
         return action
 
+
 # SubmittedPolicy=RandomPolicy
 SubmittedPolicy = Baseline
