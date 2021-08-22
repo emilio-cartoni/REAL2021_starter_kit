@@ -352,6 +352,7 @@ class WaitForNewGoal():
         nextState = ActionStart()
         return nextState.step(observation, reward, done)
 
+
 class Baseline(BasePolicy):
     """
     Main class of the baseline
@@ -505,9 +506,15 @@ class Baseline(BasePolicy):
                 allActions = np.load(config.sim['experience_data'],
                                      allow_pickle=True)
 
+        if len(allActions) < 1:
+            raise Exception('No transitions file found!\n' +
+                            'Please, either run the intrinsic phase first' +
+                            ' or specify a valid transitions file in the' +
+                            ' baseline/config.yml with use_experience_data:' +
+                            ' true')
 
         # filter actions where the arm did not go back home
-        firstRow = allActions[0][0][0][0,:]
+        firstRow = allActions[0][0][0][0, :]
 
         def validAction(action):
             ok_pre = np.all(action[0][0][0, :] == firstRow)
@@ -515,7 +522,6 @@ class Baseline(BasePolicy):
             return ok_pre and ok_post
 
         allActions = [action for action in allActions if validAction(action)]
-
 
         allAbstractedActions = [[currentAbstraction(a[0]), a[1],
                                  currentAbstraction(a[2])]
