@@ -51,11 +51,11 @@ In particular, if you want to know more about:
 - the environment, see [here](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/Environment)
 - the options available for the environment and the simulation, see [here](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/Environment-options)
 - the docker image build, see [here](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/Submissions)  
-- 
-... or see the [FAQ](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/FAQ).
+- to know more about the baseline, see [here](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/Baseline)
+... or see the [FAQ](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/FAQ) for common questions or errors.
 
 ## Support
-For any problems or additional questions on the competition, you can post on [EvalAI forum](https://evalai-forum.cloudcv.org/) or [contact the organizers](mailto:emilio.cartoni@yahoo.it?subject=[REAL2021]%20Question).
+For any problems or additional questions on the competition, feel free to post on [EvalAI forum](https://evalai-forum.cloudcv.org/) or [contact the organizers](mailto:emilio.cartoni@yahoo.it?subject=[REAL2021]%20Question).
 
 
 **Best of Luck** :tada: :tada:
