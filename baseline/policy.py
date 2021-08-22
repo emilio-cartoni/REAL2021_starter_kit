@@ -481,8 +481,11 @@ class Baseline(BasePolicy):
 
         """
         self.step(observation, reward, done)
-        fileID = np.random.randint(0, 1000000)
-        self.save("./transitions_{}".format(fileID))
+        if config.sim['save_with_seed']:
+            fileID = np.random.randint(0, 1000000)
+            self.save("./transitions_{}".format(fileID))
+        else:
+            self.save("./transitions_file")
 
     def start_extrinsic_phase(self):
         """

@@ -14,10 +14,11 @@ exploration:
   action_parts_max: 10
   home_duration: 150
 simulation:
-  experience_data: data/transitions_file.npy
+  experience_data: transitions_file.npz
+  save_with_seed: false
   compressed_data: true
   extrinsic_steps: 10000
   save_images: true
   save_masks: false
   save_positions: false
-  use_experience_data: false
+  use_experience_data: true
