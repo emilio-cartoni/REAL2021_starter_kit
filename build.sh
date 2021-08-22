@@ -11,7 +11,7 @@ then
     chmod +x Miniconda3-py38_4.10.3-Linux-x86_64.sh
     echo "Miniconda file downloaded."
 else
-    CONDASHA=$(sha256sum ./Miniconda3-py38_4.10.3-Linux-x86_64.sh)
+    CONDASHA=$(sha256sum ./Miniconda3-py38_4.10.3-Linux-x86_64.sh | cut -f1 -d" ")
     echo $CONDASHA
     if [ "$CONDASHA" == '935d72deb16e42739d69644977290395561b7a6db059b316958d97939e9bdf3d' ];
     then
@@ -33,7 +33,11 @@ cd ..
 
 # Docker image build
 # Image is given two tags, one with current timestamp and one with "latest"
-docker build -t real2021submission:$(date '+%Y%m%d%H%M%S') -t real2021submission:latest -f ./docker/Dockerfile  .
-
-
+gpu_support=false
+gpu_support=true
+if [ "$gpu_support" = true ] ; then
+    docker build -t real2021submission:$(date '+%Y%m%d%H%M%S') -t real2021submission:latest -f ./docker/Dockerfile_gpu  .
+else
+    docker build -t real2021submission:$(date '+%Y%m%d%H%M%S') -t real2021submission:latest -f ./docker/Dockerfile  .
+fi
 
