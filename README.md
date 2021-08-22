@@ -23,6 +23,8 @@ cd REAL2021_starter_kit
 ```
 conda env create -f environment.yml
 ```
+This could last a while as many libraries that are needed by the baseline will be installed, including Tensorflow.  
+(It is possible to reduce the libraries in the environment if you do not want to run the baseline).  
 
 ## How to launch the baseline agent
 1. Activate the real_robots conda environment  
@@ -37,21 +39,20 @@ python local_evaluation.py
 The default values will only launch a short evaluation, edit `local_evaluation.py` to launch full evaluations and customize the options.
 
 ## Make your own submission
-1. Launch `build.sh` to create a docker image for your submission.  
-2. (Optional) You can launch your docker image locally, to check it is working:
-```
-docker run -it real2021submission:latest /root/miniconda3/bin/conda run -n real_robots python docker_evaluation.py
-```
+To make submissions to the challenge, it is necessary to create and submit a docker container, which will contain all the dependencies to run your submission and the simulation.  
+1. Launch `build.sh` to create a docker image for your submission.   
+(The first build may take a long time since it will have to recreate the environment inside the container - subsequent build will be faster due to docker caching mechanism)
 3. Go to [EvalAI Submit page](https://eval.ai/web/challenges/challenge-page/1134/submission) and follow the instructions there to submit the image as a submission for the REAL2021 competition.  
 
 
 ## How do I...?
 For further informations, check our [Wiki](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki).  
 In particular, if you want to know more about:
-- the environment, see ...
-- the options available for the environment and the simulation, see ...
-- the docker image build, see ...
-- TBD
+- the environment, see [here](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/Environment)
+- the options available for the environment and the simulation, see [here](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/Environment-options)
+- the docker image build, see [here](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/Submissions)  
+- 
+... or see the [FAQ](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/FAQ).
 
 ## Support
 For any problems or additional questions on the competition, you can post on [EvalAI forum](https://evalai-forum.cloudcv.org/) or [contact the organizers](mailto:emilio.cartoni@yahoo.it?subject=[REAL2021]%20Question).
