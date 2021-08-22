@@ -22,7 +22,7 @@ else
         wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.10.3-Linux-x86_64.sh
         chmod +x Miniconda3-py38_4.10.3-Linux-x86_64.sh
         echo "Miniconda file downloaded."
-    fi    
+    fi
 fi
 
 # Copy yml files inside ./docker (to keep track of the file used in build)
@@ -37,7 +37,7 @@ cd ..
 # Docker image build
 # Image is given two tags, one with current timestamp and one with "latest"
 gpu_support=false
-gpu_support=true
+#gpu_support=true
 if [ "$gpu_support" = true ] ; then
     docker build -t real2021submission:$(date '+%Y%m%d%H%M%S') -t real2021submission:latest -f ./docker/Dockerfile_gpu  .
 else
