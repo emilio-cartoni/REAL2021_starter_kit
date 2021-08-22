@@ -1,7 +1,7 @@
 ![REAL2021 banner](https://raw.githubusercontent.com/wiki/emilio-cartoni/REAL2021_starter_kit/images/banner2021.gif)
 Starting kit for the [REAL2021 competition on Robot open-Ended Autonomous Learning](https://eval.ai/web/challenges/challenge-page/1134/overview).
 
-Competition will start on August 23rd.  **Starting kit will be populated shortly before.**
+Competition will start on August 23rd and will last up to mid December 2021.
 
 ## Index
 * [Install the software](#install-the-software)
@@ -36,10 +36,16 @@ The default values will only launch a short evaluation, edit `local_evaluation.p
 
 ## Make your own submission
 1. Launch `build.sh` to create a docker image for your submission.  
-2. Go to [EvalAI Submit page](https://eval.ai/web/challenges/challenge-page/1134/submission) and follow the instructions there to submit the image as a submission for the REAL2021 competition.  
+2. You can launch your docker image locally by doing:
+```
+docker run -it real2021submission:latest /root/miniconda3/bin/conda run -n real_robots python local_evaluation.py
+```
+3. Go to [EvalAI Submit page](https://eval.ai/web/challenges/challenge-page/1134/submission) and follow the instructions there to submit the image as a submission for the REAL2021 competition.  
 
+## How do I...?
+To know more, see... (TBD)
 
-To know more ... (TBD)
-
+## Support
+For any problems or additional questions, you can post on [EvalAI forum](https://evalai-forum.cloudcv.org/) or [contact the organizers](mailto:emilio.cartoni@yahoo.it?subject=[REAL2021]%20Question).
 
 **Best of Luck** :tada: :tada:
