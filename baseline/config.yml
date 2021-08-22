@@ -10,6 +10,7 @@ planner:
   try_random: false
   type: mega
 exploration:
+  autoconfig: true
   action_size: 1000
   action_parts_max: 10
   home_duration: 150

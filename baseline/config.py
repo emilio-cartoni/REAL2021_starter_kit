@@ -1,6 +1,4 @@
 import yaml
-import os
-import time
 
 cfg = None
 sim = None
@@ -9,19 +7,7 @@ plan = None
 exp = None
 
 
-def save(score):
-    strings = time.strftime("%Y,%m,%d,%H,%M,%S")
-    t = strings.split(',')
-    numbers = [int(x) for x in t]
-    filename = "config_{}_{}_{}_{}_{}.yaml".format(numbers[2], numbers[1],
-                                                   numbers[0], numbers[3],
-                                                   numbers[4])
-    fullpath = sim['data_dir'] + os.sep + filename
-    with open(fullpath, 'w') as outfile:
-        yaml.dump(str(cfg) + "\n" + str(score), outfile)
-
-
-def load(configFile):
+def loadBaselineCfg(configFile):
     with open(configFile, 'r') as ymlfile:
         global cfg, sim, abst, plan, exp
         cfg = yaml.load(ymlfile, Loader=yaml.FullLoader)
@@ -30,4 +16,24 @@ def load(configFile):
         plan = cfg['planner']
         exp = cfg['exploration']
 
-load("baseline/config.yaml")
+
+def loadOptions(optionsFile):
+    with open(optionsFile, 'r') as ymlfile:
+        options = yaml.load(ymlfile, Loader=yaml.FullLoader)
+        if options['EVALUATION_ACTION_TYPE'] == 'macro_action':
+            exp['action_size'] = 1000
+            exp['action_parts_max'] = 1
+            exp['home_duration'] = 0
+        elif options['EVALUATION_ACTION_TYPE'] == 'joints':
+            exp['action_size'] = 1000
+            exp['action_parts_max'] = 10
+            exp['home_duration'] = 150
+        else:
+            raise Exception('Baseline autoconfig only supports macro_action'
+                            + ' and joints control')
+    print("Baseline autoconfig:", cfg)
+
+
+loadBaselineCfg("baseline/config.yml")
+if exp['autoconfig']:
+    loadOptions("options.yml")
