@@ -65,7 +65,8 @@ In particular, if you want to know more about:
 ... or see the [FAQ](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/FAQ) for common questions or errors.
 
 ## Support
-For any problems or additional questions on the competition, feel free to post on [EvalAI forum](https://evalai-forum.cloudcv.org/) or [contact the organizers](mailto:emilio.cartoni@yahoo.it?subject=[REAL2021]%20Question).
+Feel free to contact us for any problems or additional questions on the competition.  
+You can post them as an issue [here](https://github.com/emilio-cartoni/REAL2021_starter_kit/issues) on Github, or post on [EvalAI forum](https://evalai-forum.cloudcv.org/) or, if you prefer, directly [contact the organizers via mail](mailto:emilio.cartoni@yahoo.it?subject=[REAL2021]%20Question).
 
 
 **Best of Luck** :tada: :tada:
