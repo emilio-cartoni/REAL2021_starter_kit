@@ -1,7 +1,9 @@
 ![REAL2021 banner](https://raw.githubusercontent.com/wiki/emilio-cartoni/REAL2021_starter_kit/images/banner2021.gif)
 Starting kit for the [REAL2021 competition on Robot open-Ended Autonomous Learning](https://eval.ai/web/challenges/challenge-page/1134/overview).
 
-Competition will start on August 23rd and will last up to mid December 2021.  
+The REAL Competition is an online challenge, open to everyone, aimed at building a robot controller that autonomously learns to interact with an environment in an open-ended way, without being instructed specifically for a task.  
+
+Competition has started on August 23rd and will last up to mid December 2021.  
 
 ## Index
 * [Install the software](#install-the-software)
@@ -53,7 +55,7 @@ docker run -it real2021submission:latest /root/miniconda3/bin/conda run -n real_
 
 
 ## How do I...?
-For further informations, check our [Wiki](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki).  
+For further information, check our [Wiki](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki).  
 In particular, if you want to know more about:
 - the environment, see [here](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/REAL-Environment)
 - the options available for the environment and the simulation, see [here](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/Environment-options)
