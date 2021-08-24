@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:latest-gpu
+FROM nvidia/cuda:11.2.2-cudnn8-runtime-ubuntu20.04
 RUN mkdir /workspace
 WORKDIR /workspace/
 ARG DEBIAN_FRONTEND=noninteractive
