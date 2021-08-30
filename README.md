@@ -5,6 +5,8 @@ The REAL Competition is an online challenge, open to everyone, aimed at building
 
 Competition has started on August 23rd and will last up to mid December 2021.  
 
+REAL 2021 has been launched during the ICDL 2021 conference ([video](https://www.youtube.com/watch?v=w0b9Tg4nqSU)).  
+
 ## Index
 * [Install the software](#install-the-software)
 * [How to launch the agent](#how-to-launch-the-baseline-agent)
