@@ -60,7 +60,7 @@ docker run -it real2021submission:latest /root/miniconda3/bin/conda run -n real_
 For further information, check our [Wiki](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki).  
 In particular, if you want to know more about:
 - the environment, see [here](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/REAL-Environment)
-- the options available for the environment and the simulation, see [here](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/Environment-options)
+- the options available for the environment and the simulation, see [here](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/Environment-options-and-simplifications)
 - how to develop your own controller and the docker image build, see [here](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/Submissions)  
 - to know more about the baseline, see [here](https://github.com/emilio-cartoni/REAL2021_starter_kit/wiki/Baseline)  
 
