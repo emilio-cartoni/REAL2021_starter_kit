@@ -3,7 +3,7 @@ Starting kit for the [REAL2021 competition on Robot open-Ended Autonomous Learni
 
 The REAL Competition is an online challenge, open to everyone, aimed at building a robot controller that autonomously learns to interact with an environment in an open-ended way, without being instructed specifically for a task.  
 
-Competition has started on August 23rd and will last up to mid December 2021.  
+Competition has started on August 23rd and will last up to mid June 2022.  
 
 REAL 2021 has been launched during the ICDL 2021 conference ([video](https://www.youtube.com/watch?v=w0b9Tg4nqSU)).  
 
@@ -16,6 +16,7 @@ REAL 2021 has been launched during the ICDL 2021 conference ([video](https://www
 
 ## Install the software
 Pre-requisites: [Python](https://www.python.org/), [Git](https://git-scm.com/), [Conda (Anaconda or Miniconda)](https://www.anaconda.com/products/individual) and [Docker](https://www.docker.com/)   
+All software has been tested on Ubuntu 18.04 and 20.04.  
 
 1. Clone this repository:  
 ```bash
@@ -45,14 +46,14 @@ The default values will only launch a short evaluation, edit `local_evaluation.p
 ## Make your own submission
 To make submissions to the challenge, it is necessary to create and submit a docker container, which will contain all the dependencies to run your submission and the simulation.  
 1. Launch  the image build to create a docker image for your submission.   
-```
-build.sh
-```
-(The first build may take a long time since it will have to recreate the environment inside the container - subsequent build will be faster due to docker caching mechanism)
+    ```
+    build.sh
+    ```
+    (The first build may take a long time since it will have to recreate the environment inside the container - subsequent build will be faster due to docker caching mechanism)  
 2. (Optional) You can launch your docker image locally, to check it is working:
-```
-docker run -it real2021submission:latest /root/miniconda3/bin/conda run -n real_robots python docker_evaluation.py
-```
+    ```
+    docker run -it real2021submission:latest /root/miniconda3/bin/conda run -n real_robots python docker_evaluation.py
+    ```
 3. Go to [EvalAI Submit page](https://eval.ai/web/challenges/challenge-page/1134/submission) and follow the instructions there to submit the image as a submission for the REAL2021 competition.  
 
 
